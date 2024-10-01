@@ -1,0 +1,14 @@
+/* _dropdown.scss */
+
+/* Change dropdown link color when clicked (active state) */
+.dropdown-menu .dropdown-item:active {
+    color: red; /* Customize this color */
+    background-color: lightgray; /* Optional background color */
+  }
+  
+  /* Optional: Change color when hovering over dropdown items */
+  .dropdown-menu .dropdown-item:hover {
+    color: black; /* Customize hover color */
+    background-color: lightgray; /* Optional hover background */
+  }
+  

@@ -1,0 +1,24 @@
+<%= form_with model: @article do |form| %>
+  <div class="d-flex justify-content-center mt-2">
+    <div class="card-body">
+      <h5 class="card-title text-center">Blog</h5>
+      <h6><%= @article.new_record? ? "New Article" : "Edit Article" %></h6>
+
+      <div class="mt-4">
+        <%= form.label :title %><br>
+        <%= form.text_field :title, class: "form-control", placeholder: "Enter title" %>
+      </div>
+
+      <div class="mt-4">
+        <%= form.label :body, "Body" %><br>
+        <%= form.text_area :body, rows: 5, class: "form-control", placeholder: "Enter body" %>
+      </div>
+
+      <div class="mt-4 text-end">
+        <%= form.submit class: "btn btn-success" %>
+      </div>
+    </div>
+  </div>
+<% end %>
+
+  
